@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>
+        <?= $business['name'] ?>
+    </h1>
+    <ul>
+        <?php foreach($business['category'] as $category) :?>
+            <li><?= $category ?></li>
+        <?php endforeach?>
+    </ul>
 </body>
 </html>
